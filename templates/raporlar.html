@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raporlarım</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <nav>
+
+        <h2>Damla Su</h2>
+
+        <ul>
+            <li><a href="/">Ana Sayfa</a></li>
+            <li><a href="/#hakkimda">Hakkımda</a></li>
+            <li><a href="/#projeler">Projelerim</a></li>
+            <li><a href="/raporlar">Raporlar</a></li>
+            <li><a href="/#iletisim">İletişim</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="raporlar-sayfasi">
+
+        <h1>Raporlarım</h1>
+
+        <p class="rapor-aciklama">
+            Hazırladığım çalışma ve proje raporlarını buradan
+            görüntüleyebilirsiniz.
+        </p>
+
+
+        <div class="rapor-grid">
+
+            {% for rapor in raporlar %}
+
+                <div class="rapor-karti">
+
+                    <div class="pdf-icon">
+                        PDF
+                    </div>
+
+                    <h2>{{ rapor.baslik }}</h2>
+
+                    <p>
+                        {{ rapor.aciklama }}
+                    </p>
+
+                    <a
+                        href="/uploads/raporlar/{{ rapor.dosya }}"
+                        target="_blank"
+                    >
+                        Raporu Aç
+                    </a>
+
+                </div>
+
+            {% else %}
+
+                <p>Henüz yayınlanmış rapor bulunmuyor.</p>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

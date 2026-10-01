@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Damla Su | Portfolio</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- ARKA PLAN EFEKTLERİ -->
+
+<div class="background-grid"></div>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+
+<div id="mouse-glow"></div>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header>
+
+    <nav>
+
+        <a href="#anasayfa" class="logo">
+            <span>&lt;</span>
+            DAMLA.DEV
+            <span>/&gt;</span>
+        </a>
+
+        <ul>
+
+            <li>
+                <a href="#anasayfa">Ana Sayfa</a>
+            </li>
+
+            <li>
+                <a href="#hakkimda">Hakkımda</a>
+            </li>
+
+            <li>
+                <a href="#yetenekler">Yetenekler</a>
+            </li>
+
+            <li>
+                <a href="#projeler">Projeler</a>
+            </li>
+
+            <li>
+                <a href="#raporlar">Raporlar</a>
+            </li>
+
+            <li>
+                <a href="#iletisim">İletişim</a>
+            </li>
+
+            <li>
+                <a href="/admin"
+                   class="admin-nav-btn">
+                    ADMIN
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================
+     ANA SAYFA
+========================= -->
+
+<section id="anasayfa" class="hero">
+
+    <div class="hero-content reveal">
+
+        <div class="system-status">
+
+            <span class="status-dot"></span>
+
+            SYSTEM ONLINE
+
+        </div>
+
+
+        <p class="hero-small">
+            &gt; MERHABA, BEN
+        </p>
+
+
+        <h1>
+            DAMLA SU<span class="cursor">_</span>
+        </h1>
+
+
+        <h2>
+            Bilgisayar Programcılığı Öğrencisi
+        </h2>
+
+
+        <div class="typing-container">
+
+            <span>&gt;&nbsp;</span>
+
+            <span id="typing-text"></span>
+
+            <span class="typing-cursor">|</span>
+
+        </div>
+
+
+        <p class="hero-description">
+
+            Yazılım geliştiriyor, yeni teknolojiler
+            öğreniyor ve fikirlerimi gerçek projelere
+            dönüştürüyorum.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#projeler"
+               class="primary-btn">
+
+                PROJELERİ KEŞFET
+
+                <span>→</span>
+
+            </a>
+
+
+            <a href="#raporlar"
+               class="secondary-btn">
+
+                RAPORLARIM
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual reveal">
+
+        <div class="code-orbit">
+
+            <div class="orbit orbit-1"></div>
+
+            <div class="orbit orbit-2"></div>
+
+            <div class="orbit orbit-3"></div>
+
+
+            <div class="code-center">
+
+                <span>&lt;/&gt;</span>
+
+                <small>CODE</small>
+
+            </div>
+
+
+            <span class="tech tech-html">
+                HTML
+            </span>
+
+            <span class="tech tech-python">
+                PY
+            </span>
+
+            <span class="tech tech-sql">
+                SQL
+            </span>
+
+            <span class="tech tech-csharp">
+                C#
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     HAKKIMDA
+========================= -->
+
+<section id="hakkimda">
+
+    <div class="section-heading reveal">
+
+        <span>01.</span>
+
+        <h2>Hakkımda</h2>
+
+        <div></div>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-text reveal">
+
+            <p class="terminal-line">
+                <span>portfolio@damla:~$</span>
+                whoami
+            </p>
+
+
+            <h3>
+                Teknoloji ve yazılım dünyasında
+                kendimi geliştiriyorum.
+            </h3>
+
+
+            <p>
+
+                Bilgisayar Programcılığı öğrencisiyim.
+                Web geliştirme, programlama ve
+                veritabanı teknolojileriyle ilgileniyorum.
+
+            </p>
+
+
+            <p>
+
+                Öğrendiğim teknolojileri gerçek
+                projelerde kullanarak kendimi
+                geliştirmeye devam ediyorum.
+
+            </p>
+
+        </div>
+
+
+        <div class="terminal-card reveal">
+
+            <div class="terminal-top">
+
+                <div class="terminal-dots">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+                <p>profile.json</p>
+
+            </div>
+
+
+            <div class="terminal-content">
+
+                <p>{</p>
+
+                <p>
+                    &nbsp;&nbsp;<span class="json-key">
+                    "name"</span>:
+                    <span class="json-value">
+                    "Damla Su"</span>,
+                </p>
+
+                <p>
+                    &nbsp;&nbsp;<span class="json-key">
+                    "education"</span>:
+                    <span class="json-value">
+                    "Bilgisayar Programcılığı"</span>,
+                </p>
+
+                <p>
+                    &nbsp;&nbsp;<span class="json-key">
+                    "focus"</span>:
+                    [
+                </p>
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="json-value">
+                    "Web Development"</span>,
+                </p>
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="json-value">
+                    "Programming"</span>,
+                </p>
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="json-value">
+                    "Database"</span>
+                </p>
+
+                <p>&nbsp;&nbsp;]</p>
+
+                <p>}</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     YETENEKLER
+========================= -->
+
+<section id="yetenekler">
+
+    <div class="section-heading reveal">
+
+        <span>02.</span>
+
+        <h2>Teknolojiler</h2>
+
+        <div></div>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+        <div class="skill-card reveal">
+            <span>01</span>
+            <h3>HTML</h3>
+            <p>Web Structure</p>
+        </div>
+
+        <div class="skill-card reveal">
+            <span>02</span>
+            <h3>CSS</h3>
+            <p>Web Design</p>
+        </div>
+
+        <div class="skill-card reveal">
+            <span>03</span>
+            <h3>JavaScript</h3>
+            <p>Web Development</p>
+        </div>
+
+        <div class="skill-card reveal">
+            <span>04</span>
+            <h3>Python</h3>
+            <p>Programming</p>
+        </div>
+
+        <div class="skill-card reveal">
+            <span>05</span>
+            <h3>C#</h3>
+            <p>Programming</p>
+        </div>
+
+        <div class="skill-card reveal">
+            <span>06</span>
+            <h3>SQL</h3>
+            <p>Database</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROJELER
+========================= -->
+
+<section id="projeler">
+
+    <div class="section-heading reveal">
+
+        <span>03.</span>
+
+        <h2>Projelerim</h2>
+
+        <div></div>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+        <div class="project-card reveal">
+
+            <div class="project-number">
+                PROJECT_01
+            </div>
+
+            <h3>Proje 1</h3>
+
+            <p>
+                Geliştirdiğim proje hakkında açıklama
+                buraya gelecek.
+            </p>
+
+            <div class="project-tech">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Python</span>
+
+            </div>
+
+            <a href="#">
+                PROJEYİ İNCELE →
+            </a>
+
+        </div>
+
+
+        <div class="project-card reveal">
+
+            <div class="project-number">
+                PROJECT_02
+            </div>
+
+            <h3>Proje 2</h3>
+
+            <p>
+                Geliştirdiğim proje hakkında açıklama
+                buraya gelecek.
+            </p>
+
+            <div class="project-tech">
+
+                <span>Python</span>
+                <span>SQL</span>
+
+            </div>
+
+            <a href="#">
+                PROJEYİ İNCELE →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RAPORLAR
+========================= -->
+
+<section id="raporlar">
+
+    <div class="section-heading reveal">
+
+        <span>04.</span>
+
+        <h2>Raporlarım</h2>
+
+        <div></div>
+
+    </div>
+
+
+    <p class="section-description reveal">
+
+        Hazırladığım çalışma ve proje raporlarını
+        buradan inceleyebilirsiniz.
+
+    </p>
+
+
+    <div class="ana-rapor-grid">
+
+        {% for rapor in raporlar %}
+
+        <div class="ana-rapor-karti reveal">
+
+            <div class="report-header">
+
+                <span class="pdf-etiket">
+                    PDF
+                </span>
+
+                <span class="report-status">
+                    ● ONLINE
+                </span>
+
+            </div>
+
+
+            <h3>
+                {{ rapor.baslik }}
+            </h3>
+
+
+            <p>
+                {{ rapor.aciklama }}
+            </p>
+
+
+            <a
+                href="/uploads/raporlar/{{ rapor.dosya }}"
+                target="_blank"
+                class="rapor-ac-btn"
+            >
+
+                RAPORU AÇ →
+
+            </a>
+
+        </div>
+
+
+        {% else %}
+
+        <div class="empty-report reveal">
+
+            <span>&gt;_</span>
+
+            <p>
+                Henüz yayınlanmış rapor bulunmuyor.
+            </p>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+
+    {% if raporlar %}
+
+    <div class="all-reports reveal">
+
+        <a href="/raporlar">
+
+            TÜM RAPORLARI GÖR →
+
+        </a>
+
+    </div>
+
+    {% endif %}
+
+</section>
+
+
+<!-- =========================
+     İLETİŞİM
+========================= -->
+
+<section id="iletisim">
+
+    <div class="section-heading reveal">
+
+        <span>05.</span>
+
+        <h2>İletişim</h2>
+
+        <div></div>
+
+    </div>
+
+
+    <div class="contact-box reveal">
+
+        <p class="terminal-line">
+
+            <span>portfolio@damla:~$</span>
+            connect
+
+        </p>
+
+
+        <h3>
+            Birlikte bir şeyler geliştirelim.
+        </h3>
+
+
+        <p>
+
+            Projelerim veya çalışmalarım hakkında
+            iletişime geçebilirsiniz.
+
+        </p>
+
+
+        <div class="contact-links">
+
+            <a href="#">
+                GITHUB ↗
+            </a>
+
+            <a href="#">
+                LINKEDIN ↗
+            </a>
+
+            <a href="mailto:damla@example.com">
+                E-MAIL ↗
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        &lt;/&gt; Damla Su
+    </p>
+
+    <span>
+        SYSTEM STATUS: ONLINE
+    </span>
+
+</footer>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

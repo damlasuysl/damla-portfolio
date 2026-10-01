@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yönetim Paneli | Damla.Dev</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="background-grid"></div>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+
+
+<div class="admin-dashboard">
+
+    <!-- ÜST KISIM -->
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <p class="dashboard-terminal">
+                &gt; portfolio_admin.exe
+            </p>
+
+            <h1>
+                Yönetim Paneli<span>_</span>
+            </h1>
+
+            <p class="dashboard-description">
+                Portföy sitenizin içeriklerini buradan yönetebilirsiniz.
+            </p>
+
+        </div>
+
+
+        <div class="dashboard-actions">
+
+            <a href="/" class="site-btn">
+                ← Siteye Git
+            </a>
+
+            <a href="/cikis" class="dashboard-logout">
+                Çıkış Yap
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- DURUM -->
+
+    <div class="dashboard-status">
+
+        <span class="status-dot"></span>
+
+        SYSTEM STATUS: ONLINE
+
+        <span class="status-line"></span>
+
+        ADMIN ACCESS: GRANTED
+
+    </div>
+
+
+    <!-- KARTLAR -->
+
+    <div class="dashboard-grid">
+
+
+        <!-- RAPORLAR -->
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-card-top">
+
+                <span class="dashboard-number">
+                    01
+                </span>
+
+                <span class="dashboard-online">
+                    ● ONLINE
+                </span>
+
+            </div>
+
+
+            <div class="dashboard-icon">
+                &lt;/PDF&gt;
+            </div>
+
+
+            <h2>Raporlar</h2>
+
+            <p>
+                PDF raporlarını yükle, görüntüle
+                veya istediğin zaman sil.
+            </p>
+
+
+            <a href="/rapor-yonet"
+               class="dashboard-card-btn">
+
+                RAPORLARI YÖNET
+
+                <span>→</span>
+
+            </a>
+
+        </div>
+
+
+        <!-- PROJELER -->
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-card-top">
+
+                <span class="dashboard-number">
+                    02
+                </span>
+
+                <span class="dashboard-online">
+                    ● ONLINE
+                </span>
+
+            </div>
+
+
+            <div class="dashboard-icon">
+                &lt;/CODE&gt;
+            </div>
+
+
+            <h2>Projeler</h2>
+
+            <p>
+                Portföyünüzde yayınlanan projeleri
+                ekleyin, düzenleyin veya silin.
+            </p>
+
+
+            <a href="/proje-yonet"
+               class="dashboard-card-btn">
+
+                PROJELERİ YÖNET
+
+                <span>→</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="dashboard-footer">
+
+        <span>
+            DAMLA.DEV / ADMIN
+        </span>
+
+        <span>
+            SECURE SESSION ●
+        </span>
+
+    </div>
+
+</div>
+
+</body>
+</html>

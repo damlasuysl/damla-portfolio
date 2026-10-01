@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rapor Yönetimi</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="admin-panel">
+
+    <div class="admin-baslik">
+        <div>
+            <h1>Rapor Yönetimi</h1>
+            <p>Yeni rapor yükleyebilir veya mevcut raporları silebilirsin.</p>
+        </div>
+
+        <a href="/panel" class="geri-btn">← Panele Dön</a>
+    </div>
+
+
+    <div class="rapor-yukle-karti">
+
+        <h2>Yeni Rapor Yükle</h2>
+
+        <form action="/rapor-yukle"
+              method="POST"
+              enctype="multipart/form-data">
+
+            <label>Rapor Başlığı</label>
+
+            <input
+                type="text"
+                name="baslik"
+                placeholder="Örn: 1. Hafta Raporu"
+                required
+            >
+
+            <label>Açıklama</label>
+
+            <textarea
+                name="aciklama"
+                placeholder="Rapor hakkında kısa açıklama..."
+                required
+            ></textarea>
+
+            <label>PDF Dosyası</label>
+
+            <input
+                type="file"
+                name="dosya"
+                accept=".pdf"
+                required
+            >
+
+            <button type="submit">
+                Raporu Yükle
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div class="admin-rapor-listesi">
+
+        <h2>Yüklenen Raporlar</h2>
+
+        {% if raporlar %}
+
+            {% for rapor in raporlar %}
+
+                <div class="admin-rapor">
+
+                    <div>
+                        <h3>{{ rapor.baslik }}</h3>
+                        <p>{{ rapor.aciklama }}</p>
+                    </div>
+
+                    <div class="rapor-islemleri">
+
+                        <a href="/uploads/raporlar/{{ rapor.dosya }}"
+                           target="_blank"
+                           class="goruntule-btn">
+                            Görüntüle
+                        </a>
+
+                        <a href="/rapor-sil/{{ rapor.id }}"
+   class="sil-btn"
+   onclick="return confirm('Bu raporu silmek istediğinize emin misiniz?');">
+    Sil
+</a>
+
+                    </div>
+
+                </div>
+
+            {% endfor %}
+
+        {% else %}
+
+            <p class="bos-mesaj">
+                Henüz rapor yüklenmedi.
+            </p>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+</body>
+</html>

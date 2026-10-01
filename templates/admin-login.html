@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetici Girişi</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="admin-login-container">
+
+    <div class="admin-login-box">
+
+        <h1>Yönetici Girişi</h1>
+
+        <p>Portföy yönetim paneline giriş yapın.</p>
+
+        {% if hata %}
+            <div class="hata-mesaji">
+                {{ hata }}
+            </div>
+        {% endif %}
+
+        <form method="POST">
+
+            <label>Kullanıcı Adı</label>
+
+            <input
+                type="text"
+                name="kullanici_adi"
+                placeholder="Kullanıcı adınızı girin"
+                required
+            >
+
+            <label>Şifre</label>
+
+            <input
+                type="password"
+                name="sifre"
+                placeholder="Şifrenizi girin"
+                required
+            >
+
+            <button type="submit">
+                Giriş Yap
+            </button>
+
+        </form>
+
+        <a class="siteye-don" href="/">
+            ← Siteye Dön
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
