@@ -102,7 +102,7 @@ def admin():
         kullanici_adi = request.form["kullanici_adi"]
         sifre = request.form["sifre"]
 
-        if kullanici_adi == "admin" and sifre == "1234":
+        if kullanici_adi == "dmlsu" and sifre == "2016":
 
             session["admin"] = True
 
