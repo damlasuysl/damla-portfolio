@@ -15,7 +15,7 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
-app.secret_key = "portfolio-gizli-anahtar"
+app.secret_key = os.environ.get("SECRET_KEY", "gelistirme-anahtari")
 
 
 # ==========================================
